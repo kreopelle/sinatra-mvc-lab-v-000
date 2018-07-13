@@ -21,7 +21,6 @@ class PigLatinizer
       end
       text_array.join(" ")
     end
-    binding.pry
 
 end
 
