@@ -13,9 +13,10 @@ class PigLatinizer
           word << "ay"
         else
           if word[1].match(/[aeiou]/)
-            severed_word = word.slice(1,word.length)
+            pig_word = word.slice(1,word.length)
             severed_word << first_letter
             severed_word << "ay"
+
           end
         end
       end
@@ -23,7 +24,7 @@ class PigLatinizer
     end
     binding.pry
 
-end 
+end
 
 #   single consonant --> all letters before inital vowel placed at the end of the word, then ay is added
 #   pig = 'igpay'
