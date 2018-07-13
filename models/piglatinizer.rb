@@ -3,7 +3,7 @@ class PigLatinizer
     def piglatinize(words)
       words_array = words.split(" ")
       words_array.collect! do |word|
-        binding.pry
+        #binding.pry
         if word[0].match(/[aeiouAEIOU]/)
           word << "way"
         else
