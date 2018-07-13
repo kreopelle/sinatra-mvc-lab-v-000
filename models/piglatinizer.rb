@@ -14,7 +14,6 @@ class PigLatinizer
           end
         end
       end
-      words_array
     end
 
 end
