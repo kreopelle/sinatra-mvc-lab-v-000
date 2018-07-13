@@ -14,7 +14,7 @@ class PigLatinizer
           end
         end
       end
-      
+      words_array.join(" ")
     end
 
 end
