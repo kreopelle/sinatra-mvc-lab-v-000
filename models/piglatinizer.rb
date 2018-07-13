@@ -16,6 +16,8 @@ class PigLatinizer
             pig_word = word.slice(1,word.length)
             pig_word << first_letter
             pig_word << "ay"
+          else
+            
 
           end
         end
