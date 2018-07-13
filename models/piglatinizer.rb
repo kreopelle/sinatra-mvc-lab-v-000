@@ -7,7 +7,7 @@ class PigLatinizer
           word << "way"
         else
           if word[1].match(/[aeiou]/)
-            word = word.slice(1,word.length) + first_letter + "ay"
+            word = word.slice(1,word.length) + word[0] + "ay"
           else
             word = word.slice(2,word.length) + word[0..1] + "ay"
           end
