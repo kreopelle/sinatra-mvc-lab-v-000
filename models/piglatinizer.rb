@@ -10,7 +10,7 @@ class PigLatinizer
       text_array.collect do |word|
         first_letter = word[0]
         if first_letter.match(/[aeiou]/)
-          word << "ay"
+          word << "way"
         else
           if word[1].match(/[aeiou]/)
             word = word.slice(1,word.length) + first_letter + "ay"
