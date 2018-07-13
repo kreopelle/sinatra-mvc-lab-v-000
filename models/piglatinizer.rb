@@ -4,7 +4,6 @@ class PigLatinizer
       words_array = words.split(" ")
       words_array.collect do |word|
         first_letter = word[0]
-        binding.pry
         if first_letter.match(/[aeiou]/)
           word << "way"
         else
