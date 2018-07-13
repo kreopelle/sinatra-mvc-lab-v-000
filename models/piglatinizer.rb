@@ -20,8 +20,6 @@ class PigLatinizer
         end
       end
       text_array.join(" ")
-
-
     end
 
 #   single consonant --> all letters before inital vowel placed at the end of the word, then ay is added
