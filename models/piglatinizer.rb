@@ -21,7 +21,9 @@ class PigLatinizer
       end
       text_array.join(" ")
     end
-    binding.pry 
+    binding.pry
+
+end 
 
 #   single consonant --> all letters before inital vowel placed at the end of the word, then ay is added
 #   pig = 'igpay'
