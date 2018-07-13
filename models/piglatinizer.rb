@@ -5,16 +5,19 @@ class PigLatinizer
     @text = text
   end
   
-  # def beginning_sound
-  #   text_array = @text.split(" ")
-  #   text_array.each do |word|
-  #     first_letter = word[0]
-  #     if first_letter == [/[aeiou]/]
-  #       word << "ay"
-  #     else
-  #       if word[1] == [/[aeiou]/]
-  #         
-  # end 
+    def beginning_sound
+      text_array = @text.split(" ")
+      text_array.collect do |word|
+        first_letter = word[0]
+        if first_letter.match(/[aeiou]/)
+          word << "ay"
+        else
+          if word[1].match(/[aeiou]/)
+            severed_word = word.slice(1,word.length)
+            severed_word.concat(first_letter, "ay")
+          else 
+                  
+    end 
   
 #   single consonant --> all letters before inital vowel placed at the end of the word, then ay is added 
 #   pig = 'igpay'
