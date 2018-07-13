@@ -10,7 +10,7 @@ class PigLatinizer
           if word[1].match(/[aeiouAEIOU]/)
             word = word.slice(1,word.length) + word[0] + "ay"
           elsif word[1].match(/[^aeiouAEIOU]/) && word[2].match(/[^aeiouAEIOU]/)
-            word = word.slice(3,word.length) + word[0..1] + "ay"
+            word = word.slice(3,word.length) + word[0..2] + "ay"
           else
             word = word.slice(2,word.length) + word[0..1] + "ay"
           end
