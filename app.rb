@@ -1,15 +1,15 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  
+
   get '/' do
     erb :user_input
-  end 
-  
+  end
+
   post '/' do
-    @user_input = params[:text]
+    @text = params[:text]
     
     erb :pig_latinized
-  end 
-  
+  end
+
 end
