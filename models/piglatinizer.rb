@@ -16,8 +16,11 @@ class PigLatinizer
             severed_word = word.slice(1,word.length)
             severed_word << first_letter
             severed_word << "ay"
-          else
-            
+          end
+        end
+      end
+      text_array.join(" ")
+
 
     end
 
