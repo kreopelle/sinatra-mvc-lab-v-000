@@ -4,7 +4,7 @@ class PigLatinizer
       words_array = words.split(" ")
       words_array.collect! do |word|
         binding.pry
-        if word[0].match(/[aeiou]/)
+        if word[0].match(/[aeiouAEIOU]/)
           word << "way"
         else
           if word.length > 1 && word[1].match(/[aeiou]/)
