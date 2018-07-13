@@ -6,8 +6,8 @@ class PigLatinizer
   end
 
     def beginning_sound
-      text_array = @text.split(" ")
-      text_array.collect do |word|
+      words_array = @words.split(" ")
+      words_array.collect do |word|
         first_letter = word[0]
         if first_letter.match(/[aeiou]/)
           word << "way"
