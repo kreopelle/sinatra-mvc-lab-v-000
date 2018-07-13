@@ -7,8 +7,8 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    @text = params[:text]
-    
+    @text = params[:user_phrase]
+
     erb :pig_latinized
   end
 
