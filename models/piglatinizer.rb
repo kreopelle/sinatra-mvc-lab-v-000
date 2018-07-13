@@ -17,8 +17,9 @@ class PigLatinizer
             severed_word << first_letter
             severed_word << "ay"
           else
+            
 
-    end 
+    end
 
 #   single consonant --> all letters before inital vowel placed at the end of the word, then ay is added
 #   pig = 'igpay'
