@@ -15,9 +15,7 @@ class PigLatinizer
           if word[1].match(/[aeiou]/)
             word = word.slice(1,word.length) + first_letter + "ay"
           else
-            pig_word = word.slice(2,word.length)
-            pig_word =
-
+            pig_word = word.slice(2,word.length) + word[0..1] + "ay"
           end
         end
       end
